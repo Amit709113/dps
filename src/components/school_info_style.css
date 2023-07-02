@@ -1,0 +1,91 @@
+.school_info{
+    display:grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    padding:5px 0px;
+    width:100%;
+    height: 8rem;
+    background-color: rgb(79, 122, 252);
+
+}
+.container{
+    grid-column: 2/3;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+}
+.logo_container{
+    grid-column: 1/2;
+    margin: auto;
+}
+.logo_container img{
+    height: 100px;
+}
+.name_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.name_container .school_address{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+.name_container .school_name{
+    text-transform: capitalize;
+    line-height: 1em;
+    letter-spacing: 0.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:3.4rem;
+    font-weight: 600;
+}
+@media( max-width:1042px){
+    .school_info{
+        display:grid;
+        grid-template-columns: 1rem 1fr 1rem;
+        padding:5px 0px;
+        width:100%;
+        height: 6rem;
+        background-color: rgb(53, 94, 242);
+    
+    }
+}
+@media(min-width:300px ) and (max-width:480px){
+    .school_info{
+        display:grid;
+        grid-template-columns: 1rem 1fr 1rem;
+        width:100%;
+        height: 6rem;
+        background-color: rgb(62, 99, 232);
+
+    }
+    .logo_container img{
+        height: 50px;
+    }
+    .name_container .school_name{
+        font-size: 22px;
+        letter-spacing: 2.8px;
+        font-weight: 800;
+        color: #000;
+        text-transform: Uppercase;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        line-height: 22px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .name_container .school_address{
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        font-weight: 400;
+        color: #000;
+        text-transform: Uppercase;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        line-height: 10px;
+        /* font-family: 'Bebas Neue', cursive; */
+
+        
+    }
+}
