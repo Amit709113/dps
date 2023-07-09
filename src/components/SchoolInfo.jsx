@@ -18,7 +18,6 @@ const SchoolInfo=()=>{
                         <div>Chandlasho Kuru Lohardaga 835213</div>
                     </div>
                 </div>
-                
             </div>
         </div>
         </>
